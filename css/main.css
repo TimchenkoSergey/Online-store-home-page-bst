@@ -11,7 +11,7 @@
  }
 
  img {
- 	width: 100%;
+ 	max-width: 100%;
  	height: auto;
  }
 
@@ -30,7 +30,7 @@
  }
 
 /* ==========================================================
- * Top menu
+ * Header Top menu
  * ========================================================== */
 
  .menu-top .navbar {
@@ -68,7 +68,7 @@
  }
 
 /* ==========================================================
- * Style shopping cart button 
+ * Header shopping cart button 
  * ========================================================== */
 
  .navbar-default .navbar-nav > li > a.btn-red {
@@ -92,6 +92,94 @@
  }
 
 /* ==========================================================
+ * Header menu slider
+ * ========================================================== */
+ 
+ .carousel-indicators-wrap {
+ 	position: absolute;
+ 	width: 100%;
+ 	bottom: -25px;
+
+ 	text-align: center;
+ }
+
+ .carousel-indicators-wrap .carousel-indicators {
+ 	display: inline-block;
+ 	width: auto;
+ 	margin-left: 0;
+ 	padding: 5px 25px;
+ 	position: relative;
+ 	left: 0;
+ 	bottom: 0;
+
+ 	border: 1px solid #cfcfcf;
+ 	border-radius: 3px;
+
+ 	background-color: #fff;
+ }
+
+ .carousel-indicators-wrap .carousel-indicators li {
+ 	width: 10px;
+ 	height: 10px;
+ 	margin: 0 7px;
+
+ 	background-color: #d2d2d2;
+ }
+
+ .carousel-indicators-wrap .carousel-indicators li.active {
+ 	background-color: #a3a3a3;
+ }
+
+ .menu-slider .item {
+ 	min-height: 600px;
+ }
+
+ .menu-slider .bg-slide {
+ 	position: absolute;
+ 	left: 0;
+ 	top: 0;
+ 	width: 100%;
+ 	height: 100%;
+
+ 	background-image: url(../img/slider.jpg);
+ 	background-size: cover;
+ 	background-position: center center;
+ }
+
+ .menu-slider .container {
+ 	position: relative;
+ }
+
+ .menu-slider .carousel-caption {
+ 	left: 0;
+ 	top: 170px;
+ }
+
+ .menu-slider .carousel-caption h1 {
+ 	font-size: 48px;
+ 	font-weight: 700;
+ }
+
+ .menu-slider .carousel-caption p {
+ 	margin-bottom: 40px;
+
+ 	font-size: 30px;
+ }
+
+ .menu-slider .carousel-caption .btn-red {
+ 	padding: 25px 35px;
+
+ 	color: #fff;
+ 	font-size: 24px;
+
+ 	border-radius: 3px;
+ }
+
+ .menu-slider .carousel-caption .btn-red:hover {
+ 	text-decoration: none;
+ }
+
+/* ==========================================================
  * Media query
  * ========================================================== */
 
@@ -99,22 +187,62 @@
  	.menu-top .navbar-nav {
  		float: none !important;
  	}
+
+ 	.menu-slider .carousel-caption {
+ 		left: 20%;
+ 		top: 130px;
+ 	}
  }
 
  @media screen and (max-width: 992px) {
- 	
+ 	.menu-slider .carousel-caption {
+ 		top: 110px;
+ 	}
+
+ 	.menu-slider .carousel-caption h1 {
+ 		font-size: 40px;
+ 	}
+
+ 	.menu-slider .carousel-caption p {
+ 		font-size: 22px;
+ 	}
  }
 
  @media screen and (max-width: 767px) {
  	.navbar-default .navbar-nav > li > a:hover {
  		background-color: #eee;
  	}
+
  	.menu-top .container,
  	.menu-top .navbar-collapse {
  		padding-left: 15px;
  	}
+
+ 	.menu-slider .carousel-caption {
+ 		top: 90px;
+ 	}
+
+ 	.menu-slider .carousel-caption h1 {
+ 		font-size: 36px;
+ 	}
+
+ 	.menu-slider .carousel-caption p {
+ 		font-size: 18px;
+ 	}
+
+ 	.menu-slider .carousel-caption .btn-red {
+ 		padding: 15px 20px;
+
+ 		font-size: 18px;
+ 	}
  }
 
  @media screen and (max-width: 480px) {
- 	
+ 	.menu-slider .carousel-caption {
+ 		top: 70px;
+ 	}
+
+ 	.menu-slider .carousel-caption .btn-red {
+ 		font-size: 14px;
+ 	}
  }
