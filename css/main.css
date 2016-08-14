@@ -1,19 +1,120 @@
-body {
-	background-color: #ececec;
+/* ==========================================================
+ * Basic styles
+ * ========================================================== */
 
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	color: #000;
-}
-img {
-	min-width: 100%;
-	height: auto;
-}
-h3 {
-	font-size: 24px;
-	font-weight: 700;
-}
-.btn-red {
-	background-color: #d51e08;
-	color: #fff;
-}
+ body {
+ 	background-color: #ececec;
+ 	color: #000;
+
+ 	font-family: 'Open Sans', sans-serif;
+ 	font-size: 14px;
+ }
+
+ img {
+ 	width: 100%;
+ 	height: auto;
+ }
+
+ h3 {
+ 	font-size: 24px;
+ 	font-weight: 700;
+ }
+
+ .btn-red {
+ 	background-color: #d51e08;
+ 	color: #fff;
+ }
+
+ .btn-red:hover {
+ 	background-color: #ec4835;
+ }
+
+/* ==========================================================
+ * Top menu
+ * ========================================================== */
+
+ .menu-top .navbar {
+ 	margin-bottom: 0;
+ 	padding: 20px 0;
+
+ 	background-color: #fff;
+
+ 	text-transform: uppercase;
+ }
+
+ .menu-top .flag img {
+ 	width: 18px;
+ 	height: auto;
+ 	margin-right: 4px;
+ 	margin-bottom: 4px;
+ }
+
+ .navbar-default .navbar-nav > li > a {
+ 	padding-top: 5px;
+ 	padding-bottom: 5px;
+
+ 	color: #000;
+
+ 	transition: 0.3s;
+ }
+
+ .navbar-default .navbar-nav > li > a:hover {
+ 	text-decoration: underline;
+ }
+
+ .menu-top .container,
+ .menu-top .navbar-collapse {
+ 	padding-left: 0;
+ }
+
+/* ==========================================================
+ * Style shopping cart button 
+ * ========================================================== */
+
+ .navbar-default .navbar-nav > li > a.btn-red {
+ 	padding: 5px 20px;
+
+ 	color: #fff;
+
+ 	border-radius: 3px;
+ }
+
+ .navbar-default .navbar-nav > li > a.btn-red:hover {
+ 	background-color: #ec4835;
+
+ 	text-decoration: none;
+ }
+
+ .navbar-default .navbar-nav > li > a > .glyphicon {
+ 	margin-right: 10px;
+
+ 	font-size: 17px;
+ }
+
+/* ==========================================================
+ * Media query
+ * ========================================================== */
+
+ @media screen and (max-width: 1200px) {
+ 	.menu-top .navbar-nav {
+ 		float: none !important;
+ 	}
+ }
+
+ @media screen and (max-width: 992px) {
+ 	
+ }
+
+ @media screen and (max-width: 767px) {
+ 	.navbar-default .navbar-nav > li > a:hover {
+ 		background-color: #eee;
+ 	}
+ 	.menu-top .container,
+ 	.menu-top .navbar-collapse {
+ 		padding-left: 15px;
+ 	}
+ }
+
+ @media screen and (max-width: 480px) {
+ 	
+ }
