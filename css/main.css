@@ -94,7 +94,10 @@
 /* ==========================================================
  * Header menu slider
  * ========================================================== */
- 
+ .menu-slider {
+ 	position: relative;
+ }
+
  .carousel-indicators-wrap {
  	position: absolute;
  	width: 100%;
@@ -180,11 +183,68 @@
  }
 
 /* ==========================================================
+ * Header main menu
+ * ========================================================== */
+
+ .menu-main {
+ 	width: 100%;
+ 	position: absolute;
+ 	top: 30px;
+ 	z-index: 30;
+ }
+
+ .menu-main .navbar-inverse {
+ 	background-color: transparent;
+
+ 	border: none;
+ }
+
+ .menu-main .main-menu-bg {
+ 	background-color: #000;
+
+ 	border-radius: 3px;
+ }
+
+ .menu-main .navbar-header .navbar-brand {
+ 	margin-left: 30px;
+ 	padding: 0;
+ }
+
+ .menu-main .navbar-header .navbar-brand img {
+ 	float: left;
+ }
+
+ .menu-main .navbar-header .navbar-brand span {
+ 	display: inline-block;
+ 	padding: 15px;
+
+ 	color: #fff;
+
+ 	font-size: 18px;
+ 	font-weight: 700;
+ 	text-transform: uppercase;
+ }
+
+ .menu-main .navbar-inverse .navbar-nav > li > a {
+ 	color: #fff;
+
+ 	font-size: 16px;
+
+ 	transition: 0.4s;
+ }
+
+ .menu-main .navbar-inverse .navbar-nav > li > a:hover {
+ 	text-decoration: underline;
+ }
+
+/* ==========================================================
  * Media query
  * ========================================================== */
 
  @media screen and (max-width: 1200px) {
- 	.menu-top .navbar-nav {
+
+ 	.menu-top .navbar-nav,
+ 	.menu-main .navbar-nav {
  		float: none !important;
  	}
 
@@ -192,12 +252,13 @@
  		left: 20%;
  		top: 130px;
  	}
+
+ 	.menu-main .navbar-form {
+ 		margin-left: 125px;
+ 	}
  }
 
  @media screen and (max-width: 992px) {
- 	.menu-slider .carousel-caption {
- 		top: 110px;
- 	}
 
  	.menu-slider .carousel-caption h1 {
  		font-size: 40px;
@@ -206,9 +267,14 @@
  	.menu-slider .carousel-caption p {
  		font-size: 22px;
  	}
+
+ 	.menu-main .navbar-inverse .navbar-nav > li > a {
+ 		font-size: 14px;
+ 	}
  }
 
  @media screen and (max-width: 767px) {
+
  	.navbar-default .navbar-nav > li > a:hover {
  		background-color: #eee;
  	}
@@ -216,10 +282,6 @@
  	.menu-top .container,
  	.menu-top .navbar-collapse {
  		padding-left: 15px;
- 	}
-
- 	.menu-slider .carousel-caption {
- 		top: 90px;
  	}
 
  	.menu-slider .carousel-caption h1 {
@@ -235,14 +297,40 @@
 
  		font-size: 18px;
  	}
+
+ 	.menu-main .container {
+ 		padding-left: 0;
+ 		padding-right: 0;
+ 	}
+
+ 	.menu-main .navbar-inverse .navbar-nav > li > a:hover {
+		background-color: #222;
+
+		text-decoration: none;
+ 	}
+
+ 	.menu-main .navbar-form {
+ 		margin: 8px 0;
+ 	}
+
+ 	.menu-main .navbar-brand img {
+ 		max-height: 50px;
+ 	}
+
+ 	.menu-main .navbar-toggle.collapsed + .navbar-brand img {
+ 		max-height: none;
+ 		position: relative;
+ 		z-index: 30;
+ 	}
  }
 
  @media screen and (max-width: 480px) {
- 	.menu-slider .carousel-caption {
- 		top: 70px;
- 	}
 
  	.menu-slider .carousel-caption .btn-red {
  		font-size: 14px;
+ 	}
+
+ 	.menu-main .navbar-toggle.collapsed + .navbar-brand img {
+ 		max-height: 80px;
  	}
  }

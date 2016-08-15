@@ -8,10 +8,10 @@
     <link href="libs/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css">
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
   </head>
   <body>
     <header class="header">
@@ -19,14 +19,14 @@
         <nav class="navbar navbar-default">
           <div class="container">
             <div class="navbar-header">
-              <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#menu-top" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="menu-top">
               <ul class="nav navbar-nav">
                 <li><a href="#">Support</a></li>
                 <li><a href="#">Free Shipping Over $50</a></li>
@@ -68,6 +68,48 @@
         </nav>
       </div>
       <div class="menu-slider">
+        <div class="menu-main">
+        <nav class="navbar navbar-inverse">
+          <div class="container">
+            <div class="main-menu-bg">
+              <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#menu-main" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                  <img src="img/logo.png" alt="StyleTour">
+                  <span>StyleTour</span>
+                </a>
+              </div>
+              <div class="collapse navbar-collapse" id="menu-main">
+                <ul class="nav navbar-nav">
+                  <li><a href="#">Shop</a></li>
+                  <li><a href="#">Man</a></li>
+                  <li><a href="#">Women</a></li>
+                  <li><a href="#">Kids</a></li>
+                  <li><a href="#">Accessories</a></li>
+                  <li><a href="#">Sale</a></li>
+                </ul>
+                <div class="nav navbar-nav navbar-right">
+                  <form class="navbar-form navbar-left" method="get">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search">
+                      <span class="input-group-btn">
+                        <button type="submit" class="btn btn-default" name="search">
+                          <span class="glyphicon glyphicon-search"></span> 
+                        </button>
+                      </span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <div class="carousel-indicators-wrap">
             <ol class="carousel-indicators">
@@ -120,46 +162,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="menu-main">
-        <nav class="navbar navbar-inverse">
-          <div class="container">
-            <div class="navbar-header">
-              <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">
-                <img src="img/logo.png" alt="StyleTour">
-                <span>StyleTour</span>
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Man</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Kids</a></li>
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">Sale</a></li>
-              </ul>
-              <div class="nav navbar-nav navbar-right">
-                <form class="navbar-form navbar-left" method="get">
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                    <span class="input-group-btn">
-                      <button type="submit" class="btn btn-default" name="search">
-                        <span class="glyphicon glyphicon-search"></span> 
-                      </button>
-                    </span>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </nav>
       </div>
     </header>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
