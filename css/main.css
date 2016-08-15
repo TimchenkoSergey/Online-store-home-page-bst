@@ -238,6 +238,27 @@
  }
 
 /* ==========================================================
+ * Main slogan
+ * ========================================================== */
+
+ .main-slogan {
+ 	padding: 50px 0;
+
+ 	border-top: 1px solid #cfcfcf;
+ 	border-bottom: 3px solid #dadada;
+
+ 	background-color: #fff;
+
+ 	text-align: center;
+ }
+
+ .main-slogan h1 {
+ 	margin: 0;
+
+ 	font-size: 30px;
+ }
+
+/* ==========================================================
  * Media query
  * ========================================================== */
 
@@ -304,9 +325,9 @@
  	}
 
  	.menu-main .navbar-inverse .navbar-nav > li > a:hover {
-		background-color: #222;
+ 		background-color: #222;
 
-		text-decoration: none;
+ 		text-decoration: none;
  	}
 
  	.menu-main .navbar-form {
