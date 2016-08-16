@@ -560,6 +560,55 @@
  }
 
 /* ==========================================================
+ * Subscribe section
+ * ========================================================== */
+
+ .subscribe {
+ 	padding: 45px 0;
+
+ 	background-color: #f5f5f5;
+
+ 	border-bottom: 1px solid #9e9e9e;
+ }
+
+ .subscribe h3 {
+ 	margin: 0;
+
+ 	font-weight: 400;
+ }
+
+ .subscribe p {
+ 	font-size: 18px;
+ 	font-weight: 300;
+ }
+
+ .subscribe .form-inline .form-control {
+ 	width: 100%;
+ 	height: 50px;
+ }
+
+ .subscribe .form-inline .btn {
+ 	width: 100%;
+ 	height: 50px;
+ 	padding-left: 50px;
+ 	padding-right: 50px;
+
+ 	background-color: #e77755;
+ 	color: #fff;
+
+ 	border-bottom: 4px solid #d96340;
+
+ 	font-size: 18px;
+ 	font-weight: 700;
+
+ 	transition: 0.3s;
+ }
+
+ .subscribe .form-inline .btn:hover {
+ 	background-color: #d96340;
+ }
+
+/* ==========================================================
  * Media query
  * ========================================================== */
 
@@ -609,6 +658,15 @@
  	.sidebar .carousel,
  	.sidebar .banner {
  		margin-right: 0;
+ 	}
+
+ 	.subscribe .form-inline {
+ 		margin-top: 20px;
+ 	}
+
+ 	.subscribe h3,
+ 	.subscribe p {
+ 		text-align: center;
  	}
  }
 
