@@ -2,6 +2,8 @@ $(function() {
 	$('.carousel').carousel({
 		interval: 4000
 	});
+
+	$("#elastislide").elastislide();
 });
 
 $(window).load(function(){
