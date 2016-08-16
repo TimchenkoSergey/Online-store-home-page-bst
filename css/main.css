@@ -98,7 +98,7 @@
  	position: relative;
  }
 
- .carousel-indicators-wrap {
+ .menu-slider .carousel-indicators-wrap {
  	position: absolute;
  	width: 100%;
  	bottom: -25px;
@@ -106,7 +106,7 @@
  	text-align: center;
  }
 
- .carousel-indicators-wrap .carousel-indicators {
+ .menu-slider .carousel-indicators-wrap .carousel-indicators {
  	display: inline-block;
  	width: auto;
  	margin-left: 0;
@@ -121,7 +121,7 @@
  	background-color: #fff;
  }
 
- .carousel-indicators-wrap .carousel-indicators li {
+ .menu-slider .carousel-indicators-wrap .carousel-indicators li {
  	width: 10px;
  	height: 10px;
  	margin: 0 7px;
@@ -129,7 +129,7 @@
  	background-color: #d2d2d2;
  }
 
- .carousel-indicators-wrap .carousel-indicators li.active {
+ .menu-slider .carousel-indicators-wrap .carousel-indicators li.active {
  	background-color: #a3a3a3;
  }
 
@@ -273,47 +273,173 @@
  }
 
 /* ==========================================================
-* Main content sidebar
-* ========================================================== */
+ * Main sidebar widget
+ * ========================================================== */
 
-.main-content .sidebar {
-	padding-top: 50px;
-	padding-bottom: 70px;
+ .main-content .sidebar {
+ 	padding-top: 50px;
+ 	padding-bottom: 70px;
 
-	border-right: 3px solid #dadada;
-}
+ 	border-right: 3px solid #dadada;
+ }
 
-.main-content .sidebar .widget {
-	margin-bottom: 30px;
-	padding-bottom: 30px;
+ .main-content .sidebar .widget {
+ 	margin-bottom: 30px;
+ 	padding-bottom: 30px;
+ }
 
-	border-bottom: 3px solid #dadada;
-}
+ .main-content .sidebar .widget h3 {
+ 	margin-top: 0;
+ 	margin-bottom: 30px;
+ }
 
-.main-content .sidebar .widget h3 {
-	margin-top: 0;
-	margin-bottom: 30px;
-}
+ .main-content .sidebar .widget ul {
+ 	margin-bottom: 0;
+ 	padding-left: 0;
 
-.main-content .sidebar .widget ul {
-	margin-bottom: 0;
-	padding-left: 0;
+ 	list-style: none;
+ }
 
-	list-style: none;
-}
+ .main-content .sidebar .widget ul a {
+ 	display: block;
 
-.main-content .sidebar .widget ul a {
-	display: block;
+ 	color: #000;
 
-	color: #000;
+ 	font-size: 16px;
+ 	line-height: 30px;
+ }
 
-	font-size: 16px;
-	line-height: 30px;
-}
+ .main-content .sidebar .widget ul a.more {
+ 	color: #358acd;	
+ }
 
-.main-content .sidebar .widget ul a.more {
-	color: #358acd;	
-}
+/* ==========================================================
+ * Main sidebar slider
+ * ========================================================== */
+
+ .sidebar .carousel {
+ 	margin-bottom: 20px;
+ }
+
+ .sidebar .sidebar-carousel-caption {
+ 	background-color: #fff;
+
+ 	border-bottom: 1px solid #e1e1e1;
+ }
+
+ .sidebar .sidebar-carousel-caption div {
+ 	padding: 20px;
+ }
+
+ .sidebar .sidebar-carousel-caption h4 {
+ 	margin-bottom: 0;
+
+ 	font-size: 14px;
+ 	font-weight: 700;
+ }
+
+ .sidebar .sidebar-carousel-caption p {
+ 	margin-bottom: 0;
+
+ 	color: #5b5b5b;
+
+ 	font-size: 12px;
+ }
+
+ .sidebar .carousel-indicators {
+ 	width: auto;
+ 	margin-left: 0;
+ 	padding: 10px 0;
+ 	position: relative;
+ 	bottom: 0;
+ 	left: 0;
+
+ 	background-color: #fff;
+ }
+
+ .sidebar .carousel-indicators li {
+ 	width: 10px;
+ 	height: 10px;
+ 	margin: 0 5px;
+
+ 	background-color: #9a9a9a;
+ }
+
+ .sidebar .carousel-indicators li.active {
+ 	background-color: #5b5b5b;
+ }
+
+/* ==========================================================
+ * Main sidebar banner
+ * ========================================================== */
+
+ .sidebar .banner {
+ 	margin-bottom: 40px;
+
+ 	background-color: #fff;
+ }
+
+ .sidebar .banner img {
+ 	margin-bottom: 35px;
+ }
+
+ .sidebar .banner h2,
+ .sidebar .banner h3 {
+ 	margin: 0;
+
+ 	text-transform: uppercase;
+ }
+
+ .sidebar .banner h2 {
+ 	font-size: 28px;
+ 	font-weight: 700;
+ }
+
+ .sidebar .banner h3 {
+ 	font-size: 18px;
+ }
+
+ .sidebar .banner a.btn-red {
+ 	display: inline-block;
+ 	margin: 30px 0;
+ 	padding: 5px 30px;
+
+ 	font-size: 18px;
+ 	font-weight: 700;
+ 	text-transform: uppercase;
+
+ 	border-radius: 3px;
+
+ 	transition: 0.5s;
+ }
+
+ .sidebar .banner a.btn-red:hover {
+ 	color: #fff;
+
+ 	text-decoration: none;
+ }
+
+/* ==========================================================
+ * Main sidebar about
+ * ========================================================== */
+
+ .sidebar .about {
+ 	padding-right: 35px;
+ }
+
+ .sidebar .about h3 {
+ 	margin: 0 0 25px;
+ }
+
+ .sidebar .about p {
+ 	margin-bottom: 30px;
+
+ 	color: #585858;
+ }
+
+ .sidebar .about p span {
+ 	color: #0a94b2;
+ }
 
 /* ==========================================================
  * Media query
@@ -333,6 +459,11 @@
 
  	.menu-main .navbar-form {
  		margin-left: 125px;
+ 	}
+
+ 	.sidebar .carousel,
+ 	.sidebar .banner {
+ 		margin-right: 15px;
  	}
  }
 
@@ -355,6 +486,11 @@
  		padding-bottom: 0;
 
  		border-right: none;
+ 	}
+
+ 	.sidebar .carousel,
+ 	.sidebar .banner {
+ 		margin-right: 0;
  	}
  }
 
@@ -413,6 +549,11 @@
 
  	.main-content .sidebar .col-xs-6 {
  		width: 100%;
+ 	}
+
+ 	.sidebar .carousel,
+ 	.sidebar .banner {
+ 		display: inline-block;
  	}
  }
 
