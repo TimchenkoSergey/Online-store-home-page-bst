@@ -445,6 +445,13 @@
  * Main content product
  * ========================================================== */
 
+ .content h3 {
+ 	padding-left: 15px;
+ }
+
+ .content .products-row {
+ 	margin-bottom: 40px;
+ }
  .content .product {
  	height: 452px;
  	padding: 25px 15px;
@@ -540,6 +547,16 @@
 
  .content .product .product-buy .btn:hover {
  	background-color: #ececec;
+ }
+
+ .content .banner-row {
+ 	margin-bottom: 30px;
+
+ 	text-align: center;
+ }
+
+ .content .banner-row img {
+ 	margin-bottom: 15px;
  }
 
 /* ==========================================================
